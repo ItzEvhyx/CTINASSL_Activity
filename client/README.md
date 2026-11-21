@@ -1,16 +1,63 @@
-# React + Vite
+# EVHYXLIFTS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Move well. Live fully.
 
-Currently, two official plugins are available:
+An editorial fitness landing experience built around sustainable strength, intentional movement, and recovery. EvhyxLifts is designed to feel direct, calm, and motivating on every screen.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <img src="./public/readme/evhyxlifts-desktop.png" alt="EvhyxLifts desktop website preview" width="100%" />
+</p>
 
-## React Compiler
+<p align="center">
+  <img src="./public/readme/evhyxlifts-mobile.png" alt="EvhyxLifts mobile website preview" width="280" />
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## The experience
 
-## Expanding the ESLint configuration
+- A high-impact, image-led hero with a clear movement-focused call to action.
+- Responsive navigation that becomes a compact menu on smaller screens.
+- Four editorial sections: approach, programs, philosophy, and next move.
+- Three program pillars: build strength, move with purpose, and recover better.
+- Smooth section reveals, parallax imagery, a continuous ticker, and reduced-motion support.
+- A focused member sign-in dialog launched from the header.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run it locally
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+Vite will print the local address in the terminal (normally `http://localhost:5173`).
+
+## Available commands
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local development server with hot reload. |
+| `npm run build` | Create an optimized production build in `dist/`. |
+| `npm run preview` | Serve the production build locally. |
+| `npm run lint` | Check the frontend with ESLint. |
+
+## Frontend structure
+
+```text
+client/
+├── public/                 # Browser-served assets and README previews
+├── src/
+│   ├── assets/             # Landing-page photography
+│   ├── components/styles/  # Home page styling and responsive rules
+│   ├── App.jsx             # Page content and interactive behavior
+│   ├── index.css           # Global styles and typography
+│   └── main.jsx            # React entry point
+└── vite.config.js          # Vite configuration
+```
+
+## Built with
+
+React 19, Vite, and hand-crafted responsive CSS. The site uses semantic landmarks, descriptive image alt text, keyboard-dismissable dialog behavior, and a `prefers-reduced-motion` fallback.
+
+---
+
+**EVHYXLIFTS** — *The work is worth it.*
