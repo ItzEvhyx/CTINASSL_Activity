@@ -5,10 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "dev:": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "Yhvhan",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0",
+    "mongoose": "^9.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }

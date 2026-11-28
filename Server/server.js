@@ -40,5 +40,5 @@ app.listen(8000, error => {
     console.error('Error starting the server:', error);
   } else {
     console.log(`Server is running on http://localhost:8000`);
-  } 
+  }
 });
