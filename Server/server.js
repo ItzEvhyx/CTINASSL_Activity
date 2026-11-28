@@ -1,8 +1,16 @@
 const express = require('express');
+const connectDB = require('./components/connect/dbConnect');
+const userRoutes = require('./controller/userController');
+ 
 const app = express();
  
+connectDB();
+ 
+// Body parsers must come before the routes, or req.body is undefined.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+ 
+app.use('/users', userRoutes);
  
 app.get('/', (req, res) => {
   res.send('Hello!');
@@ -42,3 +50,4 @@ app.listen(8000, error => {
     console.log(`Server is running on http://localhost:8000`);
   }
 });
+ 
